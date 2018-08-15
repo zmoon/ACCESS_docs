@@ -38,7 +38,7 @@ This will compile the code and place the executable into the "bin" sub-directory
 Look in the "Makefile" in this directory for other useful makefile targets.
 
 Running a simulation
--------
+--------------------
 To run an ACCESS simulation, cd to the top-level directory and issue the command "./accessx SIMNAME", where SIMNAME is the name of the simulation you want to run.
 
 The simulations are defined by the control files located in the "ctrl" sub-directory.
