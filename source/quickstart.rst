@@ -4,19 +4,14 @@
 Quickstart Guide
 ================
 
-
-
-
-Yes.
-
 ACCESS_2 Brief Instructions
 
-Ideally, ACCESS should be run on a MacOS or Linux platform.  It has been developed solely on the MacOS, but has been tested
-  on Linux Ubuntu.
 
 Installation
 ------------
-unzip the ACCESS_2.tgz tar bundle with "tar xvf ACCESS_2.tgz" into the directory where you want the code to reside.
+Ideally, ACCESS should be run on a MacOS or Linux platform.  It has been developed solely on the MacOS, but has been tested on Linux Ubuntu.
+
+Unzip the ACCESS_2.tgz tar bundle with "tar xvf ACCESS_2.tgz" into the directory where you want the code to reside.
 
 ACCESS_2 is written in Fortran90 and is currently set up to use "gfortran" as the compiler. 
 
@@ -50,16 +45,19 @@ The simulations are defined by the control files located in the "ctrl" sub-direc
 
 So, as an example, there is a control file named "accessCTRL_ch140705d1.dat" for the simulation with SIMNAME = "ch140705d1". 
 
-To run the simulation, you would issue the command "./accessx ch140705d1".  A successful simulation will result in a new directory in the "out" sub-directory with the same name as SIMNAME.
+To run the simulation, you would issue the command "./accessx ch140705d1". 
+
+A successful simulation will result in a new directory in the "out" sub-directory with the same name as SIMNAME.
+
 All of the simulation results will be located in that directory.
 
 For your own simulations, you will need to create 7 different input files (this is the hardest part of doing a simulation!):
-  + accessCTRL_SIMNAME.dat ... the control file for the simulation.
-  + cinit.dat ... initial conditions file (only ICs of simulated species that are non-zero).
-  + envmet.dat ... environmental and meteorological data file (see examples in "data" sub-directory).
-  + canopy.dat ... canopy morphological file (defines the LAI profile of the canopy you are simulating).
-  + soil.dat ... soil properties file
-  + advect.dat ... background concentrations file (only contains species for which you want to provide background concs.)
++ accessCTRL_SIMNAME.dat ... the control file for the simulation.
++ cinit.dat ... initial conditions file (only ICs of simulated species that are non-zero).
++ envmet.dat ... environmental and meteorological data file (see examples in "data" sub-directory).
++ canopy.dat ... canopy morphological file (defines the LAI profile of the canopy you are simulating).
++ soil.dat ... soil properties file
++ advect.dat ... background concentrations file (only contains species for which you want to provide background concs.)
 
 The names of these files should correspond to whatever you are trying to simulate. 
 
@@ -68,4 +66,4 @@ Examples of these files are located in the "data" sub-directory for the Chestnut
 
 
 
-
+    
