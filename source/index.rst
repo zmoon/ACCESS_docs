@@ -20,6 +20,7 @@ has developed ACCESS since the early 2010s. ACCESS v1.0 was published in ACP [#f
 
     intro
     quickstart
+    science
 
 .. rubric:: Footnotes
 
