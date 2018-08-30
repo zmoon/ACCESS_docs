@@ -24,7 +24,7 @@ copyright = u'2018, Rick Saylor, Zachary Moon'
 author = u'Rick Saylor, Zachary Moon'
 
 # The short X.Y version
-version = u''
+version = u'0.1'
 # The full version, including alpha/beta/rc tags
 release = u''
 
@@ -89,6 +89,12 @@ html_theme = 'sphinx_rtd_theme' #'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_context = {
+    'css_files': [
+        '_static/theme_overrides.css',  # override wide tables in RTD theme
+        ],
+     }
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
